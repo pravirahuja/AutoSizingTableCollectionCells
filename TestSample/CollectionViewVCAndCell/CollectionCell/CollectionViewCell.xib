@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="TestSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="307" height="54"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="307" height="54"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXH-gV-UYM">
+                        <rect key="frame" x="0.0" y="0.0" width="307" height="54"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="307" id="SNy-v7-tcY"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSg-kx-bQX">
+                        <rect key="frame" x="20" y="20" width="267" height="14"/>
+                        <color key="backgroundColor" red="0.99607843139999996" green="0.80392156859999997" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.97647058819999999" green="0.7725490196" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KXH-gV-UYM" secondAttribute="bottom" id="3Dd-7R-Zzg"/>
+                <constraint firstAttribute="trailing" secondItem="KXH-gV-UYM" secondAttribute="trailing" id="5kS-2l-os2"/>
+                <constraint firstAttribute="bottom" secondItem="LSg-kx-bQX" secondAttribute="bottom" constant="20" id="77Y-Jg-nNg"/>
+                <constraint firstItem="LSg-kx-bQX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Awb-CP-pYg"/>
+                <constraint firstItem="KXH-gV-UYM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BVy-Nu-cOL"/>
+                <constraint firstAttribute="trailing" secondItem="LSg-kx-bQX" secondAttribute="trailing" constant="20" id="INy-sF-KiB"/>
+                <constraint firstItem="KXH-gV-UYM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NaM-cV-KYU"/>
+                <constraint firstItem="LSg-kx-bQX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="aBv-bq-zis"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="307" height="54"/>
+            <connections>
+                <outlet property="containerViewWidthConstraint" destination="SNy-v7-tcY" id="ssp-L5-18i"/>
+                <outlet property="label" destination="LSg-kx-bQX" id="uRr-1k-gDE"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="56"/>
+        </collectionViewCell>
+    </objects>
+</document>
